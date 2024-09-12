@@ -148,18 +148,31 @@ public class login extends javax.swing.JFrame {
             javax.swing.JOptionPane.showMessageDialog(this, "Ingrese un correo válido.");
         } else {
             javax.swing.JOptionPane.showMessageDialog(this, "Bienvenido " + nombre);
-            Menu menu = new Menu ();
-        menu.setVisible(true);
+            //Parar abrir el Forms menu:
+             Menu menu = new Menu ();
+             menu.setVisible(true);
+            
         }
         
          
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    
+    
+    
+    
+    
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         Recuperación recuperacion = new Recuperación ();
         recuperacion.setVisible(true);
+        this.setVisible(false); 
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    
+    
+    
+    
+    
     private boolean esCorreoValido(String correo) {
         String patronCorreo = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
         return correo.matches(patronCorreo);
