@@ -12,6 +12,7 @@ public class Recuperación extends javax.swing.JFrame {
     
     public Recuperación() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
     
     private void Button_Enviar_CorreoActionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,7 +85,7 @@ public class Recuperación extends javax.swing.JFrame {
         jTextField_Recuperacion = new javax.swing.JTextField();
         Button_Enviar_Correo = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setText("Recuperación");
 

@@ -10,7 +10,9 @@ public class login extends javax.swing.JFrame {
     //______________________________________________________
     //Inicializacion 
     public login() {
+        
         initComponents(); 
+        this.setLocationRelativeTo(null);
     }
 
     
@@ -138,6 +140,8 @@ public class login extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Menu menu = new Menu ();
+             menu.setVisible(true);
         String nombre = jTextField1.getText();
         String correo = jTextField2.getText();
         String contrasena = new String(jTextField3.getText());
@@ -149,9 +153,9 @@ public class login extends javax.swing.JFrame {
         } else {
             javax.swing.JOptionPane.showMessageDialog(this, "Bienvenido " + nombre);
             //Parar abrir el Forms menu:
-             Menu menu = new Menu ();
-             menu.setVisible(true);
-            
+//             Menu menu = new Menu ();
+//             menu.setVisible(true);
+//            
         }
         
          
@@ -165,7 +169,7 @@ public class login extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         Recuperación recuperacion = new Recuperación ();
         recuperacion.setVisible(true);
-        this.setVisible(false); 
+        //this.setVisible(false); 
     }//GEN-LAST:event_jButton2ActionPerformed
 
     
